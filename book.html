@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Book a Visit | Lions Pride Barbell &amp; Fitness (design preview)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+
+<section class="page-head"><div class="wrap">
+  <div class="eyebrow">Book a visit</div>
+  <h1>Come see the gym</h1>
+  <p>Pick a time during staffed hours. We'll show you around, answer questions and get you started. Free, no pressure.</p>
+</div></section>
+
+<section class="block">
+  <div class="wrap booking">
+    <div class="card">
+      <h2 style="margin-top:0">1. Pick a day</h2>
+      <div class="days" id="days" aria-label="Available days"></div>
+      <h2>2. Pick a time</h2>
+      <div class="slots" id="slots" aria-label="Available times"></div>
+      <h2>3. Your details</h2>
+      <form class="form" id="book-form" autocomplete="off">
+        <label>Name <input name="name" placeholder="Demo only, please don't enter real details"></label>
+        <label>Mobile (for your confirmation text) <input name="mobile" placeholder="Demo only"></label>
+        <label>Your goal
+          <select name="goal"><option>Get stronger</option><option>Powerlifting / meet prep</option><option>Lose fat / look better</option><option>Youth athlete</option><option>Just curious</option></select>
+        </label>
+        <button class="btn btn-gold" type="submit">Confirm my visit</button>
+        <p class="demo-note">Design preview: this form doesn't send or store anything. On the live site it sends a confirmation and reminder text, and creates a follow-up task for staff.</p>
+      </form>
+      <div class="success" id="success" role="status">
+        <strong>You're booked for <span data-when></span>.</strong><br>
+        On the live site you'd get a confirmation text now and a reminder the day before. (Nothing was sent; this is a preview.)
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="card" style="margin-bottom:16px">
+        <h3>Rather talk to a person?</h3>
+        <p style="margin-bottom:14px">Call or text, we'll get back to you during staffed hours.</p>
+        <a class="btn btn-gold" href="sms:+18018234404" style="margin-right:6px">Text 801-823-4404</a>
+        <a class="btn btn-outline" href="tel:+18018234404">Call</a>
+      </div>
+      <div class="card" style="margin-bottom:16px">
+        <h3>Hours</h3>
+        <p><strong>Members:</strong> 24/7</p>
+        <p class="confirm"><strong>Staffed:</strong> [days and times]</p>
+      </div>
+      <div class="card">
+        <h3>Find us</h3>
+        <p style="margin-bottom:10px">887 McCormick Way, Suite 2<br>Layton, UT 84041</p>
+        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=887+McCormick+Way+Layton+UT+84041" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="site.js"></script>
+</body>
+</html>
